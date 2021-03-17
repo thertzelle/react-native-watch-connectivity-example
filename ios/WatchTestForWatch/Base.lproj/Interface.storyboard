@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchTestForWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Press Me" id="BV2-nm-v0u">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.53795671460000005" green="0.72586560249999998" blue="0.92960697410000004" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="pressMe" destination="AgC-eL-Hgc" id="A9P-uP-aaa"/>
+                            </connections>
+                        </button>
+                        <textField width="1" alignment="left" text="Text" id="J1v-g2-GqA">
+                            <color key="textColor" red="0.53795671460000005" green="0.72586560249999998" blue="0.92960697410000004" alpha="1" colorSpace="deviceRGB"/>
+                        </textField>
+                    </items>
+                    <connections>
+                        <outlet property="textThing" destination="J1v-g2-GqA" id="h16-Vk-kPn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-44"/>
+        </scene>
+    </scenes>
+</document>
